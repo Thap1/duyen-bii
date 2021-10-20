@@ -6,7 +6,7 @@
   font-weight: 800;
   font-size: 45px;
   color: #ff0101;
-  margin-left: 10vw;
+  margin-left: 9vw;
 }
 
 .ml2 .letter {
@@ -91,8 +91,9 @@ body {
 }
 .textWrapper {
   font-weight: 800;
-  font-size: 45px;
+  font-size: 40px;
   color: #79017a;
+  width: 90%;
 }
 .wordContainer {
   float: left;
