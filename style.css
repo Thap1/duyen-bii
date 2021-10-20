@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 45px;
   color: #ff0101;
   margin-left: 10vw;
 }
@@ -91,7 +91,7 @@ body {
 }
 .textWrapper {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 45px;
   color: #79017a;
 }
 .wordContainer {
