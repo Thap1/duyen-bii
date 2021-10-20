@@ -39,7 +39,7 @@ canvas.height = window.innerHeight;
 // object image
 var image = new Image();
 image.src =
-  "https://i.pinimg.com/originals/90/2c/2b/902c2bbccb72ca76cf3bbe95741174e9.png";
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1024px-Heart_coraz%C3%B3n.svg.png";
 
 for (var i = 0; i < thingsCount; i++) {
   let opacity = Math.random() + 0.4;
