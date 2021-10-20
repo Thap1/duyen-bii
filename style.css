@@ -6,7 +6,7 @@
   font-weight: 800;
   font-size: 45px;
   color: #ff0101;
-  margin-left: 9vw;
+  margin-left: 7vw;
 }
 
 .ml2 .letter {
@@ -87,7 +87,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5vh;
+  margin: 0 2vh;
 }
 .textWrapper {
   font-weight: 800;
