@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+.ml2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 50px;
+  color: #ff0101;
+  margin-left: 10vw;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 4em;
+}
+.wordContainer {
+  overflow: hidden;
+}
+
+/* We define the animation */
+@keyframes up {
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* Then, every single word gets animated up */
+.word {
+  animation: up 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(115%);
+}
+
+/* Delay for staggering effect */
+
+.textWrapper .wordContainer:nth-child(2) .word {
+  animation-delay: 3.2s;
+}
+.textWrapper .wordContainer:nth-child(3) .word {
+  animation-delay: 3.4s;
+}
+.textWrapper .wordContainer:nth-child(4) .word {
+  animation-delay: 3.6s;
+}
+.textWrapper .wordContainer:nth-child(5) .word {
+  animation-delay: 3.8s;
+}
+.textWrapper .wordContainer:nth-child(6) .word {
+  animation-delay: 4s;
+}
+.textWrapper .wordContainer:nth-child(7) .word {
+  animation-delay: 4.2s;
+}
+.textWrapper .wordContainer:nth-child(8) .word {
+  animation-delay: 4.4s;
+}
+.textWrapper .wordContainer:nth-child(9) .word {
+  animation-delay: 4.6s;
+}
+.textWrapper .wordContainer:nth-child(10) .word {
+  animation-delay: 4.8s;
+}
+
+/* And that's it! */
+
+/* SANDBOX STYLING */
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  background: #222;
+  overflow: hidden;
+  font-family: Italianno;
+}
+
+.header {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5vh;
+}
+.textWrapper {
+  font-weight: 800;
+  font-size: 50px;
+  color: #79017a;
+}
+.wordContainer {
+  float: left;
+}
+.textWrapper .wordContainer:nth-child(3) {
+  clear: both;
+}
+.textWrapper .wordContainer:nth-child(9) {
+  clear: both;
+}
+/* Test Cavas */
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: linear-gradient(
+    bottom,
+    rgb(233 180 180) 0%,
+    rgb(249 243 245) 84%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(233 180 180) 0%,
+    rgb(249 243 245) 84%
+  );
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgb(233 180 180) 0%,
+    rgb(249 243 245) 84%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(233 180 180) 0%,
+    rgb(249 243 245) 84%
+  );
+  background-image: -ms-linear-gradient(
+    bottom,
+    rgb(233 180 180) 0%,
+    rgb(249 243 245) 84%
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(233 180 180)),
+    color-stop(0.84, rgb(249 243 245))
+  );
+}
+.action-text {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
